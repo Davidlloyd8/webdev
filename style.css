@@ -193,6 +193,17 @@ textarea {
   margin-bottom: 10px;
 }
 /* End of Contact */
+/* Footer */
+.footer {
+  background-color: gainsboro;
+  text-align: center;
+  padding: 15px;
+}
+.footer p {
+  font-size: 20px;
+  font-weight: 700;
+  color: teal;
+}
 /*Media Query */
 
 @media screen and (max-width: 768px) {

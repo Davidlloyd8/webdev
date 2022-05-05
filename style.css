@@ -204,6 +204,7 @@ textarea {
   font-weight: 700;
   color: teal;
 }
+/* End of Footer */
 /*Media Query */
 
 @media screen and (max-width: 768px) {
@@ -281,7 +282,6 @@ textarea {
   .input-button {
     width: 80%;
   }
-
 }
 @media screen and (max-width: 380px) {
   .contact-container {

@@ -54,3 +54,15 @@
     color: #fff;
     border: 1px solid #fff;
 }
+
+/* Media Query  */
+
+@media screen and (max-width: 768px) {
+    .course-box {
+        padding: 2rem 0rem;
+    }
+    .course-content {
+        display: flex;
+        flex-direction: column;
+    }
+}

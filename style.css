@@ -144,6 +144,7 @@ i.fa-bars {
   font-size: 27px;
 }
 /* End of  Features */
+
 /* Contact */
 .contact-container {
   margin: 0 auto;
@@ -215,7 +216,7 @@ textarea {
     width: 100vw;
   }
   ul.navbar-links {
-    position: fixed;
+    position: absolute;
     left: -100%;
     top: 5rem;
     flex-direction: column;

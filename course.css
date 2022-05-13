@@ -10,8 +10,8 @@
 }
 .box-content {
   background-color: #f0f0f0;
-  width: 400px;
-  height: 480px;
+  width: 410px;
+  height: 500px;
   margin: 10px;
   border-radius: 8px;
   padding: 10px 20px;
@@ -27,12 +27,11 @@
 }
 .course-title h1 {
   text-align: center;
-  font-size: 38px;
 }
 .course-text p {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 10px;
+  font-size: 15px;
+  margin-bottom: 5px;
+  height: 150px;
 }
 .course-button {
     text-align: center;
@@ -72,5 +71,8 @@
 @media screen and (max-width: 500px) {
     .box-content {
         width: 94%;
+    }
+    .course-link {
+      margin-top: 10px;
     }
 }

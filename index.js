@@ -1,3 +1,4 @@
+// Main Navbar
 const icon_button = document.querySelector(".menu-icon");
 const navbarMenu = document.querySelector(".navbar-links");
 
@@ -16,3 +17,4 @@ function closeMenu() {
   icon_button.classList.remove("active");
   navbarMenu.classList.remove("active");
 }
+

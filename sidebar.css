@@ -26,9 +26,8 @@
   align-items: center;
   position: relative;
 }
-.sidebar .logo-details .icon {
-  opacity: 0;
-  transition: all 0.5s ease;
+.sidebar .logo-details a {
+    text-decoration: none;
 }
 .sidebar .logo-details .logo_name {
   color: #fff;
@@ -37,7 +36,6 @@
   opacity: 0;
   transition: all 0.5s ease;
 }
-.sidebar.open .logo-details .icon,
 .sidebar.open .logo-details .logo_name {
   opacity: 1;
 }

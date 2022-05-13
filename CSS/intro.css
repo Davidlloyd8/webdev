@@ -1,0 +1,51 @@
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+h1.get-started {
+    margin-bottom: 15px;
+    font-size: 34px;
+}
+p.text-context {
+    text-align: left ;
+}
+p.text-context a {
+    text-decoration: none;
+    color: blue;
+}
+ol.list {
+    text-align: left;
+    padding: 22px;
+}
+ol.list li {
+    font-size: 18px;
+    font-weight: 500;
+}
+.pagination {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 20px;
+
+}
+span.next {
+    margin-left: 50px;
+    background-color: aqua;
+    padding: 15px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 80px;
+}
+span.prev {
+    background-color: aqua;
+    padding: 15px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    width: 80px;
+}
+.pagination span a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}

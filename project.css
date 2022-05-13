@@ -6,7 +6,7 @@ h1 {
 .project-box {
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   align-items: center;
   padding: 6rem 1rem;
@@ -17,7 +17,7 @@ h1 {
 }
 .project-box-content {
   background-color: antiquewhite;
-  width: 31vw;
+  width: 30vw;
   margin: 10px;
   border-radius: 10px;
   padding: 10px 20px;

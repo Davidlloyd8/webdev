@@ -48,6 +48,7 @@ div.textarea {
   outline: none;
   resize: none;
   border-radius: 10px;
+  padding: 10px;
 }
 .copybutton {
   text-align: left;

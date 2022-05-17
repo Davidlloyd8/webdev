@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEBDEV | TEXTS - QUOTATIONS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../sidebar.css" />
+    <link rel="stylesheet" href="../CSS/main-content.css" />
+  </head>
+  <body>
+    <div class="sidebar open">
+      <div class="logo-details">
+        <a href="../index.html">
+          <div class="logo_name">WEBDEV</div>
+        </a>
+        <i class="fa fa-bars" id="btn"></i>
+      </div>
+
+      <ul class="nav-list">
+        <li>
+          <a href="get-started.html">
+            <i class="fa fa-code"></i>
+            <span class="links_name"><h1>HTML</h1></span>
+          </a>
+          <span class="tooltip">HTML</span>
+        </li>
+
+        <li>
+          <a href="intro.html">
+            <i class="fa fa-list"></i>
+            <span class="links_name">INTRODUCTION</span>
+          </a>
+          <span class="tooltip">INTRODUCTION</span>
+        </li>
+        <li class="active">
+          <a href="texts.html">
+            <i class="fa fa-pencil-alt"></i>
+            <span class="links_name">TEXTS</span>
+          </a>
+            <button class="collapse-btn"><span class="fa fa-angle-down"></span></button>
+            <div class="content">
+              <ul class="nav-list">
+                <li>
+                  <a href="texts.html">HEADING</a>
+                </li>
+                <li>
+                  <a href="paragraph.html">PARAGRAPH</a>
+                </li>
+                <li>
+                  <a href="bold and italic.html">BOLD AND ITALIC</a>
+                </li>
+                <li>
+                  <a href="supscript and subscript.html">SUPERSCRIPT AND SUBSCRIPT</a>
+                </li>
+                <li>
+                  <a href="breakline and horizontal rule.html">BREAKLINE AND HORIZONTAL RULE</a>
+                </li>
+                <li>
+                  <a href="strong and emphasis.html">STRONG AND EMPHASIS</a>
+                </li>
+                <li>
+                  <a href="quotation.html">QUOTATIONS</a>
+                </li>
+                <li>
+                  <a href="abbreviations and acronyms.html">ABBREVIATIONS AND ACRONYMS</a>
+                </li>
+                <li>
+                  <a href="citations and definitions.html">CITATIONS AND DEFINITIONS</a>
+                </li>
+                <li>
+                  <a href="changes to content.html">CHANGES TO CONTENT</a>
+                </li>
+              </ul>
+            </div>
+          </a>
+          
+          <span class="tooltip">TEXTS</span>
+        </li>
+        <li>
+          <a href="lists.html">
+            <i class="fa fa-list-alt"></i>
+            <span class="links_name">LISTS</span>
+          </a>
+          <span class="tooltip">LISTS</span>
+        </li>
+        <li>
+          <a href="links.html">
+            <i class="fa fa-link"></i>
+            <span class="links_name">LINKS</span>
+          </a>
+          <span class="tooltip">LINKS</span>
+        </li>
+        <li>
+          <a href="images.html">
+            <i class="fa fa-image"></i>
+            <span class="links_name">IMAGES</span>
+          </a>
+          <span class="tooltip">IMAGES</span>
+        </li>
+        <li>
+          <a href="tables.html">
+            <i class="fa fa-table"></i>
+            <span class="links_name">TABLES</span>
+          </a>
+          <span class="tooltip">TABLES</span>
+        </li>
+        <li>
+          <a href="forms.html">
+            <i class="fa fa-file-alt"></i>
+            <span class="links_name">FORMS</span>
+          </a>
+          <span class="tooltip">FORMS</span>
+        </li>
+        <li>
+          <a href="video & audio.html">
+            <i class="fa fa-play-circle"></i>
+            <span class="links_name">VIDEO & AUDIO</span>
+          </a>
+          <span class="tooltip">VIDEO & AUDIO</span>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="text">
+        <div class="container">
+          <h1 class="get-started">QUOTATION</h1>
+          <p class="text-context">
+            There are two elements commonly used for marking up quotations:
+            <ul id="lists">
+                <li><strong>Blockquote: </strong>The <span><</span>blockquote> element is 
+                    used for longer quotes that take up an entire paragraph.
+                    <br>
+                    <strong>NB:</strong> Browsers tend to indent the contents of the <span><</span>blockquote>
+                    element, however you should not use this element just to indent a 
+                    piece of text — rather you should achieve this effect using CSS. 
+                </li>
+                <li><strong>Quote: </strong>The <span><</span>q> element is used for 
+                    shorter quotes that sit within a paragraph.
+                    <br>
+                    <strong>NB: </strong>Browsers are to put quotes around 
+                    the <span><</span>q> element
+                </li>
+            </ul>
+          </p>
+          
+          <div class="textarea">
+            <h3 class="snippet-text">HTML CODE:</h3>
+            <textarea id="display" readonly spellcheck="false">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotation</title>
+  </head>
+  <body>
+    <blockquote>
+        <p>Did you ever stop to think and forget that HTML is just a markup language ?.</p>
+    </blockquote>
+    <p>As A.A. Milne said, <q>Some people talk to 
+        animals. Not many listen though. That's the problem.</q>
+    </p>
+  </body>
+</html>
+            </textarea>
+            <div class="copybutton">
+              <button onclick="copyTexttoClipboard();" id="copybtn">COPY TO CLIPBOARD</button>
+            </div>
+          </div>
+          
+          <div class="review-box">
+            <h3 class="snippet-text">REVIEW</h3>
+            <div class="review-box-content">
+              <div class="review-body">
+                <blockquote>
+                    <p>Did you ever stop to think and forget that HTML is just a markup language ?.</p>
+                </blockquote>
+                <p>As A.A. Milne said, <q>Some people talk to 
+                    animals. Not many listen though. That's the problem.</q>
+                </p>
+            </div>
+            </div>
+          </div>
+          <div class="pagination">
+              <span class="prev"><a href="strong and emphasis.html">Prev</a></span>
+              <span class="next"><a href="abbreviations and acronyms.html">Next</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../copyText.js"></script>
+    <script src="../sidebar.js"></script>
+  </body>
+</html>

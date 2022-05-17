@@ -1,0 +1,108 @@
+.container {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+h1.get-started {
+  margin-bottom: 15px;
+  font-size: 34px;
+}
+h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+p.text-context {
+  text-align: left !important;
+}
+p.text-context a {
+  text-decoration: none;
+  color: blue;
+}
+ul#lists {
+  text-align: left;
+  padding: 22px;
+}
+ol.list {
+  text-align: left;
+  padding: 22px;
+}
+ol.list li, ul#lists li {
+  font-size: 17px;
+  font-weight: 400;
+}
+div.textarea {
+  width: 100%;
+}
+.img-intro {
+    width: 550px;
+}
+#display {
+  width: 70%;
+  height: 350px;
+  outline: none;
+  resize: none;
+  border-radius: 10px;
+}
+.copybutton {
+  text-align: left;
+  margin-left: 170px;
+}
+#copybtn {
+  padding: 8px;
+  background-color: green;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 500;
+}
+.pagination {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 20px;
+}
+span.next {
+  margin-left: 50px;
+  background-color: aqua;
+  padding: 15px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  width: 80px;
+}
+span.prev {
+  background-color: aqua;
+  padding: 15px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  width: 80px;
+}
+.pagination span a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .pagination {
+    text-align: center;
+  }
+  .img-intro {
+      width: 310px;
+  }
+  #display {
+      width: 100%;
+  }
+  .copybutton {
+      margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #visual-text {
+    font-size: 17px;
+  }
+  p.text-context {
+    font-size: 14px;
+  }
+}

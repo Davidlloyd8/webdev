@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WEBDEV | INTRODUCTION</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -13,7 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../sidebar.css" />
-    <link rel="stylesheet" href="../CSS/intro.css" />
+    <link rel="stylesheet" href="../CSS/main-content.css" />
   </head>
   <body>
     <div class="sidebar open">
@@ -26,7 +26,7 @@
 
       <ul class="nav-list">
         <li>
-          <a href="#">
+          <a href="get-started.html">
             <i class="fa fa-code"></i>
             <span class="links_name"><h1>HTML</h1></span>
           </a>
@@ -34,56 +34,56 @@
         </li>
 
         <li>
-          <a href="#">
+          <a href="intro.html">
             <i class="fa fa-list"></i>
             <span class="links_name">INTRODUCTION</span>
           </a>
           <span class="tooltip">INTRODUCTION</span>
         </li>
         <li>
-          <a href="#">
+          <a href="texts.html">
             <i class="fa fa-pencil-alt"></i>
             <span class="links_name">TEXTS</span>
           </a>
           <span class="tooltip">TEXTS</span>
         </li>
         <li>
-          <a href="#">
+          <a href="lists.html">
             <i class="fa fa-list-alt"></i>
             <span class="links_name">LISTS</span>
           </a>
           <span class="tooltip">LISTS</span>
         </li>
         <li>
-          <a href="#">
+          <a href="links.html">
             <i class="fa fa-link"></i>
             <span class="links_name">LINKS</span>
           </a>
           <span class="tooltip">LINKS</span>
         </li>
         <li>
-          <a href="#">
+          <a href="images.html">
             <i class="fa fa-image"></i>
             <span class="links_name">IMAGES</span>
           </a>
           <span class="tooltip">IMAGES</span>
         </li>
         <li>
-          <a href="#">
+          <a href="tables.html">
             <i class="fa fa-table"></i>
             <span class="links_name">TABLES</span>
           </a>
           <span class="tooltip">TABLES</span>
         </li>
         <li>
-          <a href="#">
+          <a href="forms.html">
             <i class="fa fa-file-alt"></i>
             <span class="links_name">FORMS</span>
           </a>
           <span class="tooltip">FORMS</span>
         </li>
         <li>
-          <a href="#">
+          <a href="video & audio.html">
             <i class="fa fa-play-circle"></i>
             <span class="links_name">VIDEO & AUDIO</span>
           </a>
@@ -94,13 +94,263 @@
     <section class="home-section">
       <div class="text">
         <div class="container">
+          <h1 class="get-started">INTRODUCTION TO HTML</h1>
+          <h2>HTML</h2>
+          <p class="text-context">
+            HTML (HyperText Markup Language) is the code that is used to
+            structure a web page and its content. HTML consists of a series of
+            elements, which you use to enclose, or wrap, different parts of the
+            content to make it appear a certain way, or act a certain way. The
+            enclosing tags can make a word or image hyperlink to somewhere else,
+            can italicize words, can make the font bigger or smaller, and so on.
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML"
+              target="_blank"
+              >Read More</a
+            >
+          </p>
+          <h2>ANATOMY OF AN HTML ELEMENT</h2>
+          <img
+            src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png"
+            alt="anatomy of an html element" class="img-intro"
+          />
+          <ul id="lists">
+            <li>
+              <b>The opening tag:</b> This consists of the name of the element
+              (in this example, p for paragraph), wrapped in opening and closing
+              angle brackets. This opening tag marks where the element begins or
+              starts to take effect. In this example, it precedes the start of
+              the paragraph text.
+            </li>
+            <li>
+              <b>The content:</b> This is the content of the element. In this
+              example, it is the paragraph text.
+            </li>
+            <li>
+              <b>The closing tag:</b> This is the same as the opening tag,
+              except that it includes a forward slash before the element name.
+              This marks where the element ends. Failing to include a closing
+              tag is a common beginner error that can produce peculiar results.
+            </li>
+          </ul>
+          <p class="text-context">
+            <strong>NB:</strong>
+            The element is the opening tag, followed by content, followed by the
+            closing tag.
+          </p>
+          <h2>EMPTY ELEMENTS</h2>
+          <p class="text-context">
+            Not all elements follow the pattern of an opening tag, content, and
+            a closing tag. Some elements consist of a single tag, which is
+            typically used to insert/embed something in the document. For
+            example, the
+            <a href="images.html"
+              ><code><span><</span>img<span>></span></code></a
+            >
+            element embeds an image file onto a page
+          </p>
+          <h2>BLOCK AND INLINE ELEMENTS</h2>
+          <p class="text-context">
+            <strong>Block-level elements</strong> form a visible block on a
+            page. A block-level element appears on a new line following the
+            content that precedes it. Any content that follows a block-level
+            element also appears on a new line. Block-level elements are usually
+            structural elements on the page. For example, a block-level element
+            might represent headings, paragraphs, lists, navigation menus, or
+            footers. A block-level element wouldn't be nested inside an inline
+            element, but it might be nested inside another block-level element.
+          </p>
+          <p class="text-context">
+            <strong>Inline elements</strong> are contained within block-level
+            elements, and surround only small parts of the document's content
+            (not entire paragraphs or groupings of content). An inline element
+            will not cause a new line to appear in the document. It is typically
+            used with text. Examples of inline elements are anchor tag, bold,
+            emphasis tags, image.
+          </p>
+          <h2>ATTRIBUTES</h2>
+          <p class="text-context">
+            Elements can also have attributes. Attributes look like this:
+          </p>
+          <img
+            src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-attribute-small.png"
+            alt="How attributes looks like"
+            class="img-intro"
+          />
+          <p class="text-context">
+            Attributes contain extra information about the element that won't
+            appear in the content.
+            <br />
+            An attribute should have:
+          </p>
+          <ul id="lists">
+            <li>
+              A space between it and the element name. (For an element with more
+              than one attribute, the attributes should be separated by spaces
+              too.)
+            </li>
+            <li>
+                The attribute name, followed by an equal sign.
+            </li>
+            <li>
+                An attribute value, wrapped with opening and closing quote marks.
+            </li>
+          </ul>
+          <p class="text-context">
+            Two major attributes are ID Attribute and CLASS Attribute
+            <br>
+            <strong>ID ATTRIBUTE: </strong> Every HTML element can carry the id attribute.
+            It is used to uniquely identify that element from other elements on the page.
+            It's value should start with a letter or an underscore (not a number or any other character).
+            It is important that no two elements on the same page have the same value for their id 
+            attributes (otherwise the value is no longer unique).
+            The id attribute is known as a global attribute because it can be used on any element.
+            <br>
+            <strong>CLASS ATTRIBUTE: </strong> Every HTML element can also carry a class attribute.
+            Sometimes, rather than uniquely identifying one element within a document, you will want 
+            a way to identify several elements as being different from the other elements on the page.
+            The class attribute on any element can share the same value.
+          </p>
+          <h2>ANATOMY OF AN HTML DOCUMENT</h2>
+          <p class="text-context">
+            <ul id="lists">
+              <li>
+                <strong><span><</span>!DOCTYPE html> : </strong>
+                The doctype. When HTML was young (1991-1992), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML.
+                The HTML document type declaration, also known as DOCTYPE , is the first line of code required in every HTML or XHTML document. The DOCTYPE declaration is an instruction to the web browser about what version of HTML the page is written in. 
+                This ensures that the web page is parsed the same way by different web browsers.
+              </li>
+              <li>
+                <strong><span><</span>html> <span><</span>/html> : </strong>
+                This element wraps all the content on the page. It is sometimes known as the root element.
+              </li>
+              <li><strong><span><</span>head> <span><</span>/head> :</strong>
+                This element acts as a container for everything you want to include on the HTML page, that isn't the content the page will show to viewers.
+                This includes keywords and a page description that would appear in search results, CSS to style content, character set declarations, and more.
+              </li>
+              <li>
+                <strong><span><</span>meta charset="UTF-8"> :</strong>
+                This element represents metadata that cannot be represented by other HTML meta-related elements
+                The charset attributes sets the character set for your document to UTF-8, which includes most characters from the vast majority of human written languages.
+              </li>
+              <li>
+                <strong><span><</span>meta name="viewport" content="width=device-width, initial-scale=1.0" /> :</strong>
+                The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+                The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+              </li>
+              <li>
+                <strong><span><</span>title> <span><</span>/title> :</strong>
+                This sets the title of the page, which is the title that appears in the browser tab the page is loaded in. The page title is also used to describe the page when it is bookmarked.
+              </li>
+              <li>
+                <strong><span><</span>body> <span><</span>/body> :</strong>
+                This contains all the content that displays on the page, including text, images, videos, games, playable audio tracks, or whatever else.
+              </li>
+            </ul>
+          </p>
+          <div class="textarea">
+            <textarea id="display" readonly spellcheck="false">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title of Document</title>
+  </head>
+  <body>
+  </body>
+</html>
+            </textarea>
+            <div class="copybutton">
+              <button onclick="copyTexttoClipboard();" id="copybtn">COPY TO CLIPBOARD</button>
+            </div>
+          </div>
+          <h2>INFORMATION ABOUT WEBPAGES</h2>
+          <p class="text-context">
+            <strong><span><</span>meta> :</strong>
+            The <span><</span>meta> element lives inside the <span><</span>head>
+            <span><</span>/head> element and contains information about webpage. It is not visible 
+            to users but fulfils a number of purposes such as telling search engines about your
+            webpage, who created it, and whether or not it is time sensitive. (if the page is 
+            time sensitive it can be set to expire.)
+            <br>
+            The <span><</span>meta> element is an empty element so it does not have a closing tag.
+            It uses attribute to carry the information. The most common attribute are the name,
+            and the content attribute which tend to be use together. This attribute specify properties
+            of the entire page. The value of the name attribute is the property you are setting
+            and the value of the content attribute is the value you want to give this property. The value
+            of the name attribute can be anything you want it to be. Some defined values for this 
+            attribute that are commonly used are:
+            <ol class="list">
+              <li><strong>Description:</strong>
+                This contains a description of the page. This description is commonly use by search engines
+                to understand what the page is about and should be a maximum of 155 characters. sometimes it
+                is also displayed in search engine result.
+              </li>
+              <li><strong>Keywords:</strong>
+                This contains a list of comma-separated word that a user might search on to find
+                the page. In practice, this no longer has any noticeable effect on how search engines 
+                index your site.
+              </li>
+              <li>
+                <strong>Robot:</strong>
+                This indicate whether search engines should add this page to their search result or not.
+                A value of noindex can be used if this page should not be added. A value of nofollow can be used
+                if search engines should add this page in their result but not any pages that it links to.
+              </li>
+            </ol>
+          </p>
+          <p class="text-context">
+            The <span><</span>meta> element also use the http-equiv and content attribute in pairs.
+            <br>
+            There are three instances of http-equiv attributes:
+            <ol class="list">
+              <li>
+                <strong>Author:</strong> This define the author of the webpage.
+              </li>
+              <li>
+                <strong>Pragma:</strong> This prevent the browser from caching the page. (that is, storing
+                it locally to save time downloading it on subsequent visit.)
+              </li>
+              <li>
+                <strong>Expires:</strong> Because browser often cache the content of a page, the expire option 
+                can be used to indicate when the page should expire (and no longer be cache).
+              </li>
+            </ol>
+          </p>
+          <div class="textarea">
+            <textarea id="display" readonly spellcheck="false">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Description of the webpage">
+    <meta name="keywords" content="Tech, Sport, Opinion, Art">
+    <meta name="robots" content="nofollow">
+    <meta http-equiv="author" content="Author of the Webpage">
+    <meta http-equiv="pragma" content="no cache">
+    <meta http-equiv="expires" content="Fri, 30 Dec 2022 23:59:59 GMT">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title of Document</title>
+  </head>
+  <body>
+  </body>
+</html>
+            </textarea>
+            <div class="copybutton">
+              <button onclick="copyTexttoClipboard();" id="copybtn">COPY TO CLIPBOARD</button>
+            </div>
+          </div>
           <div class="pagination">
-              <span class="prev"><a href="get-started.html">Prev</a></span>
-              <span class="next"><a href="intro.html">Next</a></span>
+            <span class="prev"><a href="javascript:void(0);">Prev</a></span>
+            <span class="next"><a href="intro.html">Next</a></span>
           </div>
         </div>
       </div>
     </section>
+    <script src="../copyText.js"></script>
     <script src="../sidebar.js"></script>
   </body>
 </html>

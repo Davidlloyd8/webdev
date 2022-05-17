@@ -40,11 +40,48 @@
           </a>
           <span class="tooltip">INTRODUCTION</span>
         </li>
-        <li>
+        <li class="active">
           <a href="texts.html">
             <i class="fa fa-pencil-alt"></i>
             <span class="links_name">TEXTS</span>
           </a>
+            <button class="collapse-btn"><span class="fa fa-angle-down"></span></button>
+            <div class="content">
+              <ul class="nav-list">
+                <li>
+                  <a href="texts.html">HEADING</a>
+                </li>
+                <li>
+                  <a href="#">PARAGRAPH</a>
+                </li>
+                <li>
+                  <a href="#">BOLD AND ITALIC</a>
+                </li>
+                <li>
+                  <a href="#">SUPERSCRIPT AND SUBSCRIPT</a>
+                </li>
+                <li>
+                  <a href="#">BREAKLINE AND HORIZONTAL RULE</a>
+                </li>
+                <li>
+                  <a href="#">STRONG AND EMPHASIS</a>
+                </li>
+                <li>
+                  <a href="#">QUOTATIONS</a>
+                </li>
+                <li>
+                  <a href="#">ABBREVIATIONS AND ACRONYMS</a>
+                </li>
+                <li>
+                  <a href="#">CITATIONS AND DEFINITIONS</a>
+                </li>
+                <li>
+                  <a href="#">CHANGES TO CONTENT</a>
+                </li>
+              </ul>
+            </div>
+          </a>
+          
           <span class="tooltip">TEXTS</span>
         </li>
         <li>
@@ -94,107 +131,87 @@
     <section class="home-section">
       <div class="text">
         <div class="container">
-          <h1 class="get-started">GET STARTED</h1>
-          <h2>WEB DEVELOPMENT</h2>
+          <h1 class="get-started">TEXT</h1>
           <p class="text-context">
-            Web development is the work involved in developing a website for the
-            Internet (World Wide Web) or an intranet (a private network). Web
-            development can range from developing a simple single static page of
-            plain text to complex web applications, electronic businesses, and
-            social network services. A more comprehensive list of tasks to which
-            Web development commonly refers, may include Web engineering, Web
-            design, Web content development, client liaison,
-            client-side/server-side scripting, Web server and network security
-            configuration, and e-commerce development.
-            <a
-              href="https://en.wikipedia.org/wiki/Web_development"
-              target="_blank"
-              >Read More</a
-            >
+            When creating a web page, you add tags (known as markup) to the contents
+            of the page. These tags provide extra meaning and allow browsers to show users
+            the appropiate structure for the page.
+            <br>
+            There are two ways to add markup to your text that appears on your page:
+            <ul id="lists">
+              <li>
+                <strong>Structural markup:</strong>
+                the elements that you can use to describe both headings and paragraphs
+              </li>
+              <li>
+                <strong>Semantic markup:</strong>
+                This is a way of writing and structuring your HTML (Hypertext Markup Language) so that it reinforces the semantics, 
+                or meaning, of the content rather than its appearance.
+              </li>
+            </ul>
           </p>
-          <h2>ESSENTIAL TOOLS NEEDED</h2>
-          <ol class="list">
-            <li>VISUAL STUDIO CODE</li>
-            <li>CHROME BROWSER</li>
-          </ol>
-          <h2>VISUAL STUDIO CODE</h2>
+          <h2>HEADINGS</h2>
           <p class="text-context">
-            A better code editor is a fundamental requirement of front-end
-            developers – and with a similar concern, here we’re mentioning one
-            of the most recommended code editors for you i.e., Visual Studio
-            Code. This open-source code editor by Microsoft leverages you with
-            numerous remarkable features such as syntax highlighting, smart code
-            completion, built-in debugger, built-in Git commands, easier
-            deployment capabilities, and many others. In addition, it is
-            available for Windows, macOS, and Linux as well – also, Visual Code
-            Studio provides you with built-in support for JavaScript, TypeScript
-            & Node.js and other languages such as C++, Java, Python, PHP, etc.
-            can also be supported using extensions. You’re strongly recommended
-            to give it a try to Visual Studio Code, especially if you’re a
-            beginner front-end developer.
-            <a
-              href="https://code.visualstudio.com/docs/introvideos/basics"
-              target="_blank"
-              >Learn More</a
-            >
-            <br />
-            Step by step how to install Visual Studio Code
-            <a
-              href="https://www.educative.io/edpresso/how-to-install-visual-studio-code-on-windows-os"
-              target="_blank"
-              >Click Here</a
-            >
-            <br />
-            Download
-            <a href="https://code.visualstudio.com/download" target="_blank"
-              >Here</a
-            >
+            HTML has six levels of headings: <span><</span>h1><span><</span>/h1>
+            to <span><</span>h6><span><</span>/h6>
+            <br>
+            <span><</span>h1> : is used for main headings
+            <br>
+            <span><</span>h2> : is used for subheadings and so on
+            <br>
+            <strong>NB:</strong> Browsers display the contents of headings at different sizes. The 
+            contents of an <span><</span>h1> element is the largest, and the contents of 
+            an <span><</span>h6> element is the smallest. The exact size at which each 
+            browser shows the headings can vary slightly
           </p>
-          <h2>CHROME BROWSER</h2>
-          <p class="text-context">
-            Google Chrome is a cross-platform web browser developed by Google.
-            It was first released in 2008 for Microsoft Windows, built with free
-            software components from Apple WebKit and Mozilla Firefox.It was
-            later ported to Linux, macOS, iOS, and Android, where it is the
-            default browser. The browser is also the main component of Chrome
-            OS, where it serves as the platform for web applications.
-            <a
-              href="https://en.wikipedia.org/wiki/Google_Chrome"
-              target="_blank"
-              >Read More</a
-            >
-            <br />
-            Step by step to download and install Chromein your PC
-            <a
-              href="https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop"
-              target="_blank"
-              >Click Here</a
-            >
-            <br />
-            <b>NB: </b> Any browser can be used
-          </p>
-          <h2 id="visual-text">
-            VISUAL STUDIO CODE EXTENSIONS THAT ARE NEEDED AND HOW TO INSTALL
-            THEM
-          </h2>
-          <ol class="list">
-            <li>PRETTIER</li>
-            <li>LIVE SERVER</li>
-          </ol>
-          <p class="text-context">
-            Guide on how to install extensions in visualstudio code
-            <a
-              href="https://code.visualstudio.com/docs/editor/extension-marketplace#:~:text=You%20can%20browse%20and%20install,on%20the%20VS%20Code%20Marketplace."
-              target="_blank"
-            >Click Here</a>
-          </p>
+          
+          <div class="textarea">
+            <h3 class="snippet-text">HTML CODE:</h3>
+            <textarea id="display" readonly spellcheck="false">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Headings</title>
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+  </body>
+</html>
+            </textarea>
+            <div class="copybutton">
+              <button onclick="copyTexttoClipboard();" id="copybtn">COPY TO CLIPBOARD</button>
+            </div>
+          </div>
+          
+          <div class="review-box">
+            <h3 class="snippet-text">REVIEW</h3>
+            <div class="review-box-content">
+              <div class="review-body">
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+            </div>
+            </div>
+          </div>
           <div class="pagination">
-              <span class="prev"><a href="javascript:void(0);">Prev</a></span>
-              <span class="next"><a href="intro.html">Next</a></span>
+              <span class="prev"><a href="intro.html">Prev</a></span>
+              <span class="next"><a href="paragraph.html">Next</a></span>
           </div>
         </div>
       </div>
     </section>
+    <script src="../copyText.js"></script>
     <script src="../sidebar.js"></script>
   </body>
 </html>

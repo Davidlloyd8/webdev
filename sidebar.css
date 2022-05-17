@@ -62,6 +62,9 @@
   text-align: center;
   line-height: 60px;
 }
+.sidebar li.active i {
+  color: #11101d;
+}
 .sidebar .nav-list {
   margin-top: 20px;
   height: 100%;
@@ -107,6 +110,9 @@
   transition: all 0.4s ease;
   background: #11101d;
 }
+.sidebar li.active a {
+  background: #fff;
+}
 .sidebar li a:hover {
   background: #fff;
 }
@@ -119,21 +125,53 @@
   pointer-events: none;
   transition: 0.4s;
 }
-.sidebar.open li a .links_name {
+.sidebar li.active a .links_name {
+  color: #11101d;
+}
+.sidebar.open li a .links_name, .collapse-btn span {
   opacity: 1;
   pointer-events: auto;
 }
 .sidebar li a:hover .links_name,
-.sidebar li a:hover i {
+.sidebar li a:hover i, .collapse-btn span:hover {
   transition: all 0.5s ease;
   color: #11101d;
 }
+
 .sidebar li i {
   height: 50px;
   line-height: 50px;
   font-size: 18px;
   border-radius: 12px;
 }
+
+.sidebar .collapse-btn span {
+  visibility: hidden;
+}
+.sidebar.open .collapse-btn span {
+  visibility: visible;
+}
+.collapse-btn  {
+  position: relative;
+  top: -38px;
+  left: 160px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+li.active .collapse-btn {
+  color: #11101d;
+}
+.content {
+  display: none;
+  overflow: hidden;
+}
+.content ul li a {
+  background: #11101d !important;
+  color: #fff;
+  font-size: 13px;
+}
+
 .home-section {
   position: relative;
   background: #e4e9f7;

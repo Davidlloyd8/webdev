@@ -30,12 +30,18 @@ ol.list li, ul#lists li {
   font-size: 17px;
   font-weight: 400;
 }
-div.textarea {
-  width: 100%;
-}
 .img-intro {
     width: 550px;
 }
+.snippet-text {
+    text-align: left;
+    margin-left: 160px;
+}
+div.textarea {
+  width: 100%;
+  margin-top: 15px;
+}
+
 #display {
   width: 70%;
   height: 350px;
@@ -55,6 +61,22 @@ div.textarea {
   border-radius: 8px;
   font-weight: 500;
 }
+.review-box {
+    width: 100%;
+    margin-top: 20px;
+}
+.review-box-content {
+    border: 1px solid grey;
+    border-radius: 8px;
+    width: 70%;
+    margin: 0 auto;
+    height: 350px;
+    overflow: auto;
+    padding: 10px;
+    text-align: left;
+    background-color: #fff;
+}
+
 .pagination {
   margin-top: 30px;
   margin-bottom: 20px;
@@ -93,8 +115,11 @@ span.prev {
   #display {
       width: 100%;
   }
-  .copybutton {
+  .copybutton, .snippet-text {
       margin-left: 0;
+  }
+  .review-box-content {
+      width: 100%;
   }
 }
 

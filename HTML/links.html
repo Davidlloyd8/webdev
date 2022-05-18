@@ -54,7 +54,7 @@
           </a>
           <span class="tooltip">LISTS</span>
         </li>
-        <li>
+        <li class="active">
           <a href="links.html">
             <i class="fa fa-link"></i>
             <span class="links_name">LINKS</span>
@@ -94,103 +94,279 @@
     <section class="home-section">
       <div class="text">
         <div class="container">
-          <h1 class="get-started">GET STARTED</h1>
-          <h2>WEB DEVELOPMENT</h2>
+          <h1 class="get-started">LINKS</h1>
           <p class="text-context">
-            Web development is the work involved in developing a website for the
-            Internet (World Wide Web) or an intranet (a private network). Web
-            development can range from developing a simple single static page of
-            plain text to complex web applications, electronic businesses, and
-            social network services. A more comprehensive list of tasks to which
-            Web development commonly refers, may include Web engineering, Web
-            design, Web content development, client liaison,
-            client-side/server-side scripting, Web server and network security
-            configuration, and e-commerce development.
-            <a
-              href="https://en.wikipedia.org/wiki/Web_development"
-              target="_blank"
-              >Read More</a
-            >
+            Links are the defining feature of the web because they allow you to
+            move from one web page to another — enabling the very idea of
+            browsing or surfing.
+            <br />
+            This are the common types of link:
           </p>
-          <h2>ESSENTIAL TOOLS NEEDED</h2>
-          <ol class="list">
-            <li>VISUAL STUDIO CODE</li>
-            <li>CHROME BROWSER</li>
-          </ol>
-          <h2>VISUAL STUDIO CODE</h2>
+          <ul id="lists">
+            <li>Links from one website to another</li>
+            <li>Links from one page to another on the same website</li>
+            <li>
+              Links from one part of a web page to another part of the same page
+            </li>
+            <li>Links that open in a new browser window</li>
+            <li>
+              Links that start up your email program and address a new email to
+              someone
+            </li>
+          </ul>
           <p class="text-context">
-            A better code editor is a fundamental requirement of front-end
-            developers – and with a similar concern, here we’re mentioning one
-            of the most recommended code editors for you i.e., Visual Studio
-            Code. This open-source code editor by Microsoft leverages you with
-            numerous remarkable features such as syntax highlighting, smart code
-            completion, built-in debugger, built-in Git commands, easier
-            deployment capabilities, and many others. In addition, it is
-            available for Windows, macOS, and Linux as well – also, Visual Code
-            Studio provides you with built-in support for JavaScript, TypeScript
-            & Node.js and other languages such as C++, Java, Python, PHP, etc.
-            can also be supported using extensions. You’re strongly recommended
-            to give it a try to Visual Studio Code, especially if you’re a
-            beginner front-end developer.
-            <a
-              href="https://code.visualstudio.com/docs/introvideos/basics"
-              target="_blank"
-              >Learn More</a
-            >
-            <br />
-            Step by step how to install Visual Studio Code
-            <a
-              href="https://www.educative.io/edpresso/how-to-install-visual-studio-code-on-windows-os"
-              target="_blank"
-              >Click Here</a
-            >
-            <br />
-            Download
-            <a href="https://code.visualstudio.com/download" target="_blank"
-              >Here</a
-            >
+            Links are created using the <span><</span>a> element which has an
+            attribute called href. The value of the href attribute is the page
+            that you want people to go to when they click on the link. The text
+            between the opening <span><</span>a> tag and closing
+            <span><</span>/a> tag is known as link text and will be taken to the
+            page specified in the href attribute.When you link to a different
+            website, the value of the href attribute will be the full web
+            address for the site, which is known as an absolute URL.
           </p>
-          <h2>CHROME BROWSER</h2>
+          <h2>Linking to Other Sites</h2>
+          <div class="textarea">
+            <h3 class="snippet-text">HTML CODE:</h3>
+            <textarea id="display" readonly spellcheck="false">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link</title>
+  </head>
+  <body>
+    <h3>MULTITENANT WEBSITE</h3>
+    <ul>
+      <li><a href="https://www.facebook.com">Facebook</a></li>
+      <li><a href="https://www.gmail.com">Gmail</a></li>
+      <li><a href="https://www.instagram.com">Instagram</a></li>
+      <li><a href="https://www.twitter.com">Twitter</a></li>
+    </ul>
+  </body>
+</html>
+            </textarea>
+            <div class="copybutton">
+              <button onclick="copyTexttoClipboard();" id="copybtn">
+                COPY TO CLIPBOARD
+              </button>
+            </div>
+          </div>
+
+          <div class="review-box">
+            <h3 class="snippet-text">REVIEW</h3>
+            <div class="review-box-content">
+              <div class="review-body">
+                <h3>MULTITENANT WEBSITE</h3>
+                <ul>
+                  <li><a href="https://www.facebook.com">Facebook</a></li>
+                  <li><a href="https://www.gmail.com">Gmail</a></li>
+                  <li><a href="https://www.instagram.com">Instagram</a></li>
+                  <li><a href="https://www.twitter.com">Twitter</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h2>Linking to Other Pages on the Same Site</h2>
           <p class="text-context">
-            Google Chrome is a cross-platform web browser developed by Google.
-            It was first released in 2008 for Microsoft Windows, built with free
-            software components from Apple WebKit and Mozilla Firefox.It was
-            later ported to Linux, macOS, iOS, and Android, where it is the
-            default browser. The browser is also the main component of Chrome
-            OS, where it serves as the platform for web applications.
-            <a
-              href="https://en.wikipedia.org/wiki/Google_Chrome"
-              target="_blank"
-              >Read More</a
-            >
-            <br />
-            Step by step to download and install Chromein your PC
-            <a
-              href="https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop"
-              target="_blank"
-              >Click Here</a
-            >
-            <br />
-            <b>NB: </b> Any browser can be used
+            When you are linking to other pages within the same site, you do not
+            need to specify the domain name in the URL. You can use a shorthand
+            known as a relative URL.
           </p>
-          <h2 id="visual-text">
-            VISUAL STUDIO CODE EXTENSIONS THAT ARE NEEDED AND HOW TO INSTALL
-            THEM
-          </h2>
-          <ol class="list">
-            <li>PRETTIER</li>
-            <li>LIVE SERVER</li>
-          </ol>
+          <div class="textarea">
+            <h3 class="snippet-text">HTML CODE:</h3>
+            <textarea id="display" readonly spellcheck="false">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="paragraph.html">Paragraph page</a></li>
+      <li><a href="lists.html">List page</a></li>
+      <li><a href="quotation.html">Quotation</a></li>
+      <li><a href="forms.html">Form age</a></li>
+    </ul>
+  </body>
+</html>
+            </textarea>
+            <div class="copybutton">
+              <button onclick="copyTexttoClipboard();" id="copybtn">
+                COPY TO CLIPBOARD
+              </button>
+            </div>
+          </div>
+
+          <div class="review-box">
+            <h3 class="snippet-text">REVIEW</h3>
+            <div class="review-box-content">
+              <div class="review-body">
+                <ul>
+                  <li><a href="paragraph.html">Paragraph page</a></li>
+                  <li><a href="lists.html">List page</a></li>
+                  <li><a href="quotation.html">Quotation</a></li>
+                  <li><a href="forms.html">Form age</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h2>Email Links</h2>
           <p class="text-context">
-            Guide on how to install extensions in visualstudio code
-            <a
-              href="https://code.visualstudio.com/docs/editor/extension-marketplace#:~:text=You%20can%20browse%20and%20install,on%20the%20VS%20Code%20Marketplace."
-              target="_blank"
-            >Click Here</a>
+            To create a link that starts up the user's email program and
+            addresses an email to a specified email address, you use the
+            <span><</span>a> element. However, this time the value of the href
+            attribute starts with mailto: and is followed by the email address
+            you want the email to be sent to.
           </p>
+          <div class="textarea">
+            <h3 class="snippet-text">HTML CODE:</h3>
+            <textarea id="display" readonly spellcheck="false">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link</title>
+  </head>
+  <body>
+    <a href="mailto:sam@exampl.com">Email Samuel</a>
+  </body>
+</html>
+            </textarea>
+            <div class="copybutton">
+              <button onclick="copyTexttoClipboard();" id="copybtn">
+                COPY TO CLIPBOARD
+              </button>
+            </div>
+          </div>
+
+          <div class="review-box">
+            <h3 class="snippet-text">REVIEW</h3>
+            <div class="review-box-content">
+              <div class="review-body">
+                <a href="mailto:sam@exampl.com">Email Samuel</a>
+              </div>
+            </div>
+          </div>
+          <h2>Opening Links in a New Window</h2>
+          <p class="text-context">
+            If you want a link to open in a new window, you can use the target
+            attribute on the opening <span><</span>a> tag. The value of this
+            attribute should be "_blank".
+          </p>
+          <div class="textarea">
+            <h3 class="snippet-text">HTML CODE:</h3>
+            <textarea id="display" readonly spellcheck="false">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link</title>
+  </head>
+  <body>
+    <h1>OPENING LINKS IN A NEW WINDOW</h1>
+    <p class="text-context">
+      <a href="http://www.facebook.com" target="_blank">Facebook</a>
+    </p>
+  </body>
+</html>
+            </textarea>
+            <div class="copybutton">
+              <button onclick="copyTexttoClipboard();" id="copybtn">
+                COPY TO CLIPBOARD
+              </button>
+            </div>
+          </div>
+
+          <div class="review-box">
+            <h3 class="snippet-text">REVIEW</h3>
+            <div class="review-box-content">
+              <div class="review-body">
+                <h1>OPENING LINKS IN A NEW WINDOW</h1>
+                <p class="text-context">
+                  <a href="http://www.facebook.com" target="_blank">Facebook</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <h2>Linking to a Specific Part of the Same Page</h2>
+          <div class="textarea">
+            <h3 class="snippet-text">HTML CODE:</h3>
+            <textarea id="display" readonly spellcheck="false">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link</title>
+  </head>
+  <body>
+    <h1 id="top">Film-Making Terms</h1>
+    <a href="#arc_shot">Arc Shot</a><br />
+    <a href="#interlude">Interlude</a><br />
+    <a href="#prologue">Prologue</a><br /><br />
+    <h2 id="arc_shot">Arc Shot</h2>
+    <p>A shot in which the subject is photographed by an encircling
+      or moving camera
+    </p>
+    <h2 id="interlude">Interlude</h2>
+    <p>A brief, intervening film scene or sequence, not specifically
+      tied to the plot, that appears within a film
+    </p>
+    <h2 id="prologue">Prologue</h2>
+    <p>A speech, preface, introduction, or brief scene preceding the
+      the main action or plot of a film; contrast to epilogue
+    </p>
+    <p><a href="#top">Top</a></p>
+  </body>
+</html>
+            </textarea>
+            <div class="copybutton">
+              <button onclick="copyTexttoClipboard();" id="copybtn">
+                COPY TO CLIPBOARD
+              </button>
+            </div>
+          </div>
+
+          <div class="review-box">
+            <h3 class="snippet-text">REVIEW</h3>
+            <div class="review-box-content">
+              <div class="review-body">
+                <h1 id="top">Film-Making Terms</h1>
+                <a href="#arc_shot">Arc Shot</a><br />
+                <a href="#interlude">Interlude</a><br />
+                <a href="#prologue">Prologue</a><br /><br />
+                <h2 id="arc_shot">Arc Shot</h2>
+                <p>
+                  A shot in which the subject is photographed by an encircling
+                  or moving camera
+                </p>
+                <h2 id="interlude">Interlude</h2>
+                <p>
+                  A brief, intervening film scene or sequence, not specifically
+                  tied to the plot, that appears within a film
+                </p>
+                <h2 id="prologue">Prologue</h2>
+                <p>
+                  A speech, preface, introduction, or brief scene preceding the
+                  the main action or plot of a film; contrast to epilogue
+                </p>
+                <p><a href="#top">Top</a></p>
+              </div>
+            </div>
+          </div>
           <div class="pagination">
-              <span class="prev"><a href="javascript:void(0);">Prev</a></span>
-              <span class="next"><a href="intro.html">Next</a></span>
+            <span class="prev"><a href="lists.html">Prev</a></span>
+            <span class="next"><a href="images.html">Next</a></span>
           </div>
         </div>
       </div>

@@ -40,16 +40,15 @@
           </a>
           <span class="tooltip">INTRODUCTION</span>
         </li>
-        <li class="active">
+        <li>
           <a href="texts.html">
             <i class="fa fa-pencil-alt"></i>
             <span class="links_name">TEXTS</span>
-            <button class="collapse-btn"><span class="fa fa-angle-down"></span></button>
           </a>
-          
+
           <span class="tooltip">TEXTS</span>
         </li>
-        <li>
+        <li class="active">
           <a href="lists.html">
             <i class="fa fa-list-alt"></i>
             <span class="links_name">LISTS</span>
@@ -96,14 +95,214 @@
     <section class="home-section">
       <div class="text">
         <div class="container">
-          
+          <h1 class="get-started">LIST</h1>
+          <p class="text-context">
+            There are lots of occasions when we need to use lists. HTML provides
+            us with three different types:
+          </p>
+          <ul id="lists">
+            <li>
+              <strong>Ordered Lists:</strong> This are lists where each item in
+              the list is numbered. For example, the list might be a set of
+              steps for a recipe that must be performed in order, or a legal
+              contract where each point needs to be identified by a section
+              number.
+            </li>
+            <li>
+              <strong> Unordered Lists: </strong>This are lists that begin with
+              a bullet point (rather than characters that indicate order).
+            </li>
+            <li>
+              <strong> Definition Lists: </strong> This are made up of a set of
+              terms along with the definitions for each of those terms.
+            </li>
+          </ul>
+          <h2>LIST ITEM</h2>
+          <p class="text-context">
+            Each item in the list is placed between an opening
+            <span><</span>li>tag and a closing <span><</span>/li> tag. (The li
+            stands for list item.)
+          </p>
+          <h2>Ordered List</h2>
+          <p class="text-context">
+            The ordered list is created with the <span><</span>ol> element.
+          </p>
+          <p class="text-context">
+            <strong>NB: </strong>Sometimes you may see a type attribute used
+            with the <span><</span>ol> element to specify the type of numbering
+            (numbers, letters, roman numerals and so on). It is better to use
+            the CSS list-style-type property.
+          </p>
+          <div class="textarea">
+            <h3 class="snippet-text">HTML CODE:</h3>
+            <textarea id="display" readonly spellcheck="false">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ordered List</title>
+  </head>
+  <body>
+    <ol>
+      <li>Chop potatoes into quarters</li>
+      <li>Simmer in salted water for 15-20 minutes until tender</li>
+      <li>Heat milk, butter and nutmeg</li>
+      <li>Drain potatoes and mash</li>
+      <li>Mix in the milk mixture</li>
+    </ol>
+  </body>
+</html>
+            </textarea>
+            <div class="copybutton">
+              <button onclick="copyTexttoClipboard();" id="copybtn">
+                COPY TO CLIPBOARD
+              </button>
+            </div>
+          </div>
+
+          <div class="review-box">
+            <h3 class="snippet-text">REVIEW</h3>
+            <div class="review-box-content">
+              <div class="review-body">
+                <ol>
+                  <li>Chop potatoes into quarters</li>
+                  <li>Simmer in salted water for 15-20 minutes until tender</li>
+                  <li>Heat milk, butter and nutmeg</li>
+                  <li>Drain potatoes and mash</li>
+                  <li>Mix in the milk mixture</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <h2>Unordered List</h2>
+          <p class="text-context">
+            The unordered list is created with the <span><</span>ul> element.
+          </p>
+          <p class="text-context">
+            <strong>NB: </strong>Sometimes you may see a type attribute used
+            with the <span><</span>ul> element to specify the type of bullet
+            point (circles, squares, diamonds and so on). It is better to use
+            the CSS list-style-type property
+          </p>
+          <div class="textarea">
+            <h3 class="snippet-text">HTML CODE:</h3>
+            <textarea id="display" readonly spellcheck="false">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unordered List</title>
+  </head>
+  <body>
+    <ul>
+      <li>Chop potatoes into quarters</li>
+      <li>Simmer in salted water for 15-20 minutes until tender</li>
+      <li>Heat milk, butter and nutmeg</li>
+      <li>Drain potatoes and mash</li>
+      <li>Mix in the milk mixture</li>
+    </ul>
+  </body>
+</html>
+            </textarea>
+            <div class="copybutton">
+              <button onclick="copyTexttoClipboard();" id="copybtn">
+                COPY TO CLIPBOARD
+              </button>
+            </div>
+          </div>
+
+          <div class="review-box">
+            <h3 class="snippet-text">REVIEW</h3>
+            <div class="review-box-content">
+              <div class="review-body">
+                <ul>
+                  <li>Chop potatoes into quarters</li>
+                  <li>Simmer in salted water for 15-20 minutes until tender</li>
+                  <li>Heat milk, butter and nutmeg</li>
+                  <li>Drain potatoes and mash</li>
+                  <li>Mix in the milk mixture</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h2>Definition List</h2>
+          <p class="text-context">
+            The definition list is created with the <span><</span>dl> element
+            and usually consists of a series of terms and their definitions.
+          </p>
+          <p class="text-context">
+            <strong>Definition Term: </strong>This is used to contain the term
+            being defined (<span><</span>dt>).
+            <br />
+            <strong>Definition Data: </strong>This is used to contain the
+            definition.
+          </p>
+          <div class="textarea">
+            <h3 class="snippet-text">HTML CODE:</h3>
+            <textarea id="display" readonly spellcheck="false">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Definition List</title>
+  </head>
+  <body>
+    <dl>
+      <dt>HORIZONTAL LINES</dt>
+      <dd>Horizontal lines are used to visually break up sections of a document. The horizontal 
+        line tag create a line from the current position in the document to the right margin
+        and breaks the line accordingly.
+      </dd>
+      <dt>PARAGRAPH</dt>
+      <dd>
+        The paragraph tag offers a way to structure your text into different paragraphs.
+      </dd>
+    </dl>
+  </body>
+</html>
+            </textarea>
+            <div class="copybutton">
+              <button onclick="copyTexttoClipboard();" id="copybtn">
+                COPY TO CLIPBOARD
+              </button>
+            </div>
+          </div>
+
+          <div class="review-box">
+            <h3 class="snippet-text">REVIEW</h3>
+            <div class="review-box-content">
+              <div class="review-body">
+                <dl>
+                  <dt>HORIZONTAL LINES</dt>
+                  <dd>
+                    Horizontal lines are used to visually break up sections of a
+                    document. The horizontal line tag create a line from the
+                    current position in the document to the right margin and
+                    breaks the line accordingly.
+                  </dd>
+                  <dt>PARAGRAPH</dt>
+                  <dd>
+                    The paragraph tag offers a way to structure your text into
+                    different paragraphs.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
           <div class="pagination">
-              <span class="prev"><a href="intro.html">Prev</a></span>
-              <span class="next"><a href="lists.html">Next</a></span>
+            <span class="prev"><a href="changes to content.html">Prev</a></span>
+            <span class="next"><a href="links.html">Next</a></span>
           </div>
         </div>
       </div>
     </section>
+    <script src="../copyText.js"></script>
     <script src="../sidebar.js"></script>
   </body>
 </html>
